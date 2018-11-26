@@ -29,7 +29,7 @@ var canvasWidth = 550;
  
  var speed =20; 
  
- var canvas = document.getElementById('canvas');
+ var canvas = document.querySelector('canvas');
 
 
  canvas.width = canvasWidth;
