@@ -1,0 +1,319 @@
+
+ body{
+
+ 	overflow-x:hidden;
+ 	opacity:1;
+
+ }
+
+ .conteneur{
+ 	margin:0;
+ 	padding:0;
+ }
+
+
+ #canvas{
+
+ 	position:relative;
+ 	z-index:1;
+ }
+ 	.first-plan{
+
+ 		background:url('../img/city-first-plan2.png') ;
+ 	
+ 		display:block;
+ 		height:500px;
+ 		width:4000px;
+ 		background-repeat:repeat-x;
+ 		background-size: 1000px;
+	background-position: 0px 50%;
+	   opacity:40;
+	    animation: townl 15s infinite linear;
+	    animation-delay:1s;
+	     
+ 	}
+
+ 	@keyframes townl{
+
+ 				from{background-position: 0px 50%;
+
+				}
+
+			
+			to{
+
+				background-position: -1000px 50%;
+			}
+ 	}
+
+
+ 	.scnd-plan{
+
+ 			background:url('../img/city-scnd-plan.png') ;
+ 		height:500px;
+ 		width:4000px;
+ 		background-repeat:repeat-x;
+ 		background-size: 1000px;
+	    z-index: 2;
+	    background-position: 0px 50%;
+	    animation: arrtownl 25s infinite linear;
+	    animation-delay:1s;
+
+ 	}
+
+ 	@keyframes arrtownl{
+
+ 			from{background-position: 0px 50%;
+
+				}
+
+			
+			to{
+
+				background-position: -1000px 50%;
+			}
+ 	}
+
+ 	#bgtown{
+ 		position:absolute;
+ 	}
+
+.nuage {
+    height: 200px;
+    position: absolute;
+    top: 50px;
+  animation: nuage 25s linear infinite;
+  animation-delay:5s;
+  opacity:0;
+}
+
+.nuage1{
+  background-color:#dd2071;
+  width:60px;
+  height:60px;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.nuage2{
+  background-color:#dd2071;
+  width:60px;
+  height:60px;
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.nuage3{
+  background-color:#dd2071;
+  width:60px;
+  height:60px;
+  position: absolute;
+  margin-left: 264px;
+  margin-top: 25px;
+  border-radius: 30px;
+}
+
+
+.nuage4{
+  background-color:#dd2071;
+  width:60px;
+  height:60px;
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+
+.nuage5{
+  background-color:#dd2071;
+  width:60px;
+  height:60px;
+  position: absolute;
+  margin-left: 480px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+
+.nuage6{
+  background-color:#dd2071;
+  width:60px;
+  height:60px;
+  position: absolute;
+  margin-left: 464px;
+  margin-top: 45px;
+  border-radius: 30px;
+}
+
+@keyframes nuage{
+  0% {
+    transform: translatex(1200px) rotate(2deg);
+    opacity:0;
+  }
+  10% {
+   transform: translatex(1100px) rotate(2deg);
+    opacity:1;
+  }
+
+  20% {
+   transform: translatex(1000px) rotate(2deg);
+    opacity:1;
+  }
+   30% {
+   transform: translatex(900px) rotate(2deg);
+    opacity:1;
+  }
+
+   40% {
+   transform: translatex(800px) rotate(2deg);
+    opacity:1;
+  }
+
+   50% {
+   transform: translatex(700px) rotate(2deg);
+    opacity:1;
+  }
+
+   60% {
+   transform: translatex(600px) rotate(2deg);
+    opacity:1;
+  }
+
+   70% {
+   transform: translatex(500px) rotate(2deg);
+    opacity:1;
+  }
+
+   80% {
+   transform: translatex(400px) rotate(2deg);
+    opacity:0;
+  }
+
+   90% {
+   transform: translatex(300px) rotate(2deg);
+    opacity:0;
+  }
+  100% {
+   transform: translatex(200px) rotate(2deg);
+    opacity:0;
+  }
+   }
+
+
+ .noeud{
+ 	position:absolute;
+ 	z-index:2;
+ }
+
+ 	
+
+   #cadeau{
+   	z-index:1;
+
+   }
+
+ .bandeau-v{
+ 	position:relative;
+ 	height:30px;
+ 	width:6px;
+ 	background:#dd2071;
+ 	left:12px;
+ 	bottom:0px;
+ }
+
+ .bandeau-h{
+ 	position:relative;
+ 	height:6px;
+ 	width:30px;
+ 	background:#dd2071;
+ 	left:0px;
+ 	bottom:17px;
+ }
+
+
+
+ .nd1{
+position:relative;
+ 	background:#dd2071;
+ 	width:10px;
+ 	height:5px;
+ 	border-radius:80% ;
+ 	transform: rotate(40deg);
+    top: -4px;
+    left: 7px;
+ }
+
+
+
+ .nd2{
+   position:relative;
+ 	background:#dd2071;
+ 	width:10px;
+ 	height:5px;
+ 	border-radius:80% ;
+ 	transform: rotate(-40deg);
+    top: -9px;
+    left: 12px;
+ }
+
+ .mobilapp{
+
+ 	margin-left:280px;
+ 	margin-top:100px;
+ }
+
+
+
+ .call_action{
+ 	position:absolute;
+	top:70px;
+ 	z-index: 3;
+ 	margin-left:185px;
+
+ }
+
+ ul{
+ 	position:absolute;
+ 	list-style: none;
+ 	top:30px;
+ 	margin-left:42px;
+ 	width:1200px;
+ 	
+ }
+
+ li{
+ 	display:inline-block;
+ }
+
+ .btn-apple-store{
+background: url('../img/app-store.png') no-repeat;
+transition: background ease .3s;
+width:112px;
+height:40px;
+position:relative;
+top:20px;
+cursor:pointer;
+ }
+
+  .btn-apple-store:hover{
+
+background: url('../img/app-store-hover.png');
+ }
+
+ .btn-google-play{
+background: url('../img/ggl-play.png') no-repeat;
+transition: background ease .3s;
+width:119px;
+height:43px;
+position:relative;
+top:20px;
+cursor:pointer;
+ }
+
+  .btn-google-play:hover{
+
+background: url('../img/ggl-play_hover.png');
+ }
